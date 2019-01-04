@@ -1,0 +1,11 @@
+version: "3.3"
+services:
+  spark:
+    build: .
+    ports:
+      - "7077:7077"
+      - "8080:8080"
+    command: ["tail", "-f", "/dev/null"]
+    volumes:
+      - "./data:/data"
+      - "./jars:/jars"
