@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/spark-basic.iml" filepath="$PROJECT_DIR$/.idea/modules/spark-basic.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/spark-basic_2682.iml" filepath="$PROJECT_DIR$/.idea/modules/spark-basic_2682.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/spark-basic_2682-build.iml" filepath="$PROJECT_DIR$/.idea/modules/spark-basic_2682-build.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/spark-demo.iml" filepath="$PROJECT_DIR$/.idea/modules/spark-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/spark-demo.iml" filepath="$PROJECT_DIR$/spark-demo.iml" />
     </modules>
   </component>

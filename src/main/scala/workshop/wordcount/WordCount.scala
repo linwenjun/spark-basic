@@ -36,11 +36,7 @@ object WordCount {
         .groupBy("word")
         .count()
         .orderBy("word")
-//      .as[String] // As a data set
-////      .write
-////      .option("quoteAll", false)
-////      .option("quote", " ")
-////      .csv(outputPath)
+
     df.show()
     log.info("Application Done: " + spark.sparkContext.appName)
   }
