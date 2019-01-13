@@ -29,15 +29,6 @@ object HelloWorld {
     log.info("Writing data: ")
 
     import spark.implicits._
-//    val df = spark.read
-//      .text("/data/wordcount.txt")
-//      .withColumn("word", explode(split(col("value"), " ")))
-//      .select("word")
-//      .groupBy("word")
-//      .count()
-//      .orderBy("word")
-//
-//    df.show()
     log.info("Application Done: " + spark.sparkContext.appName)
   }
 }
