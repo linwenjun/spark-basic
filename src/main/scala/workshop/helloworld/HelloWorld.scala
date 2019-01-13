@@ -1,13 +1,13 @@
-package workshop.wordcount
-
+package workshop.helloworld
 import java.time.Clock
+
 
 import com.typesafe.config.ConfigFactory
 import org.apache.log4j.{Level, LogManager, Logger}
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql.functions._
 
-object WordCount {
+object HelloWorld {
   val log: Logger = LogManager.getRootLogger
   implicit val clock: Clock = Clock.systemDefaultZone()
 
@@ -29,10 +29,15 @@ object WordCount {
     log.info("Writing data: ")
 
     import spark.implicits._
-    val df = spark.read
-        .text("/data/wordcount.txt")
-
-    df.show()
+//    val df = spark.read
+//      .text("/data/wordcount.txt")
+//      .withColumn("word", explode(split(col("value"), " ")))
+//      .select("word")
+//      .groupBy("word")
+//      .count()
+//      .orderBy("word")
+//
+//    df.show()
     log.info("Application Done: " + spark.sparkContext.appName)
   }
 }

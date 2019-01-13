@@ -193,3 +193,7 @@ $RECYCLE.BIN/
 # End of https://www.gitignore.io/api/sbt,java,scala,linux,macos,windows,jetbrains
 
 spark-2.3.2-bin-hadoop2.7.tgz
+
+id_rsa
+
+run-in-aws.sh
