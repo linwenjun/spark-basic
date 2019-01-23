@@ -1,0 +1,1 @@
+val input = sc.textFile("hdfs://192.168.3.2:9000/simple.csv")
